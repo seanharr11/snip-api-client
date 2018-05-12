@@ -3,11 +3,10 @@ import requests
 import sys
 
 secret = "pyc0n2o18-open-sp@c3"
-email = "seanharr4182@gmail.com"  # Your Email Here
-password = "pycon2018"  # Your password here
-# url_base = "http://localhost:8080"
 url_base = "http://ec2-35-171-7-34.compute-1.amazonaws.com:8080"
 
+email = "seanharr4182@gmail.com"  # Your Email Here
+password = "pycon2018"  # Your password here
 # Create User
 res = requests.post(f"{url_base}/users", data=json.dumps(
     {"email": email, "password": password}))
