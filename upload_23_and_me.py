@@ -3,6 +3,7 @@ import os
 import requests
 import sys
 
+# Yes, this is hardcoded while this API is being demoed!
 secret = "pyc0n2o18-open-sp@c3"
 url_base = "http://ec2-35-171-7-34.compute-1.amazonaws.com:8080"
 

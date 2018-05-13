@@ -5,7 +5,7 @@ import requests
 secret = os.environ['SNIP_JWT_SECRET']
 email = os.environ['SNIP_API_EMAIL']
 password = os.environ['SNIP_API_PASSWORD']
-url_base = "http://localhost:8080"
+url_base = "http://ec2-35-171-7-34.compute-1.amazonaws.com:8080"
 
 # Login and get JWT
 login_res = requests.post(f"{url_base}/login", data=json.dumps(
