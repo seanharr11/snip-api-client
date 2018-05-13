@@ -3,8 +3,8 @@ import json
 import requests
 
 secret = os.environ['SNIP_JWT_SECRET']
-email = "seanharr11@gmail.com"  # Your Email Here
-password = "pycon2018"  # Your password here
+email = os.environ['SNIP_API_EMAIL']
+password = os.environ['SNIP_API_PASSWORD']
 url_base = "http://localhost:8080"
 
 # Login and get JWT

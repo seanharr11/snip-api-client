@@ -16,20 +16,17 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-### To upload your data:
+### To upload and get your Snip data:
 
-1. Download your 23&Me data from their website
-2. Move your 23&Me data file to this directory
-3. Edit the `upload_23_and_me.py` script to set your **username and password** (it defaults to mine!).
-4. Run the upload client
+1. Download your 23&Me data from their website.
+2. Move your 23&Me data file to this directory.
+3. Set the `SNIP_API_EMAIL` and `SNIP_API_PASSWORD` **env** variables to define your credentials. (*These will be used in the script below to create an account, and to authorize when you request to get your results*)
+```bash
+export SNIP_API_EMAIL='<your email>'
+export SNIP_API_PASSWORD='<your password>'
+```
+4. Run the upload client, passing the *name of your 23&me file* as the first arg:
 ```bash
 python upload_23_and_me.py <23_and_me_file.txt>
 ```
-
-### To get your Snip data:
-
-1. Run the download results client
-```bash
-python get_snip_results.py
-```
-2. Open the file *23_and_me.json*
+5. Open the file *23_and_me.json* to see your results.
