@@ -1,8 +1,12 @@
+# Snip
+
 **Snip** is a an API service to link your raw 23&Me data, with a slim version of DbSNP, to return JSON data containing:
 
 1. **Diseases** pertaining to **your** SNPs, and their ClinVar clinical significance labels.
 2. **PubMed IDs** that support DbSNP's data.
 3. **Frequency Studies** (i.e. GWAS) that identify how rare the SNP in sample populations (% of study population).
+
+I gave Lightning talk on this API at PyCon2018...[you can find it on youtube here](https://www.youtube.com/watch?v=bTAFl8P2DkE&feature=youtu.be&t=3115)
 
 Your data will be uploaded to a PostgreSQL database in AWS, and only accessible with your username, password and application secret. Requests are authenticated at the app-level with a JWT. User-sensitive information (i.e. 23&Me SNP data) is stored in a table with separate permissions from the rest of the database, and only accessible from 1 endpoint.
 
