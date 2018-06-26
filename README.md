@@ -22,7 +22,8 @@ pip install -r requirements.txt
 
 ### To upload and get your Snip data:
 
-1. Download your 23&Me data from their website.
+1. Download your 23&Me data from their website
+   * Navigate your browser here: https://you.23andme.com/tools/data/download/, login, and download the raw data file.
 2. Move your 23&Me data file to this directory.
 3. Set the `SNIP_API_EMAIL` and `SNIP_API_PASSWORD` **env** variables to define your credentials. (*These will be used in the script below to create an account, and to authorize when you request to get your results*)
 ```bash
